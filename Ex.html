@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Prime </title>
+</head>
+<body>
+<script>
+    function isPrime (number){
+        let numbers = +prompt('Nhập số cần kiểm tra: ');
+        let i;
+        if (i===2){
+            alert('day la so nguyen to');
+        }else{
+            for (i = 2; i < 10000; i++) {
+                if (numbers % i == 0){
+                    alert(numbers + ': Khong phai so nguyen to');
+                    break;
+                }else {
+                    alert(numbers + ': la so nguyen to');
+                    break;
+                }
+            }
+        }
+
+    }
+    isPrime();
+
+</script>
+
+</body>
+</html>
